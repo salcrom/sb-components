@@ -3,7 +3,7 @@ import { MyLabel } from "../../components/MyLabel";
 
 
 export default {
-    title: 'UI/MyLabel',
+    title: 'UI/Etiquetas/MyLabel',
     component: MyLabel,
     argTypes: {
         size: { control: 'select', options: ['normal','h1','h2','h3'] },
