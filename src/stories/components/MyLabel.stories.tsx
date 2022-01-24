@@ -3,11 +3,12 @@ import { MyLabel } from "../../components/MyLabel";
 
 
 export default {
-    title: 'UI/Etiquetas/MyLabel',
+    title: 'UI/MyLabel',
     component: MyLabel,
     argTypes: {
         size: { control: 'select', options: ['normal','h1','h2','h3'] },
-        color: { control: 'select' }
+        color: { control: 'select' },
+        fontColor: { control: 'color' }
     }
 } as ComponentMeta<typeof MyLabel>
 
@@ -46,6 +47,6 @@ CustomFontColor.args = {
 export const CustomBackgroundColor = Template.bind({});
 CustomBackgroundColor.args = {
     size: 'h1',
-    fontColor: 'white',
-    backgroundColor: 'black'
+    fontColor: '#eeeeee',
+    backgroundColor: '#000000'
 }
